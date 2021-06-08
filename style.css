@@ -1,5 +1,192 @@
+@font-face {
+  font-family: "baron_neueblack";
+  src: url("fonte/baronneue-black-webfont.woff2") format("woff2"),
+    url("fonte/baronneue-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "baron_neueblack_italic";
+  src: url("baronneue-blackitalic-webfont.woff2") format("woff2"),
+    url("baronneue-blackitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "baron_neuebold";
+  src: url("fonte/baronneue-bold-webfont.woff2") format("woff2"),
+    url("fonte/baronneue-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "baron_neuebold_italic";
+  src: url("baronneue-bolditalic-webfont.woff2") format("woff2"),
+    url("baronneue-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "baron_neueitalic";
+  src: url("baronneue-italic-webfont.woff2") format("woff2"),
+    url("baronneue-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "baron_neueregular";
+  src: url("baronneue-regular-webfont.woff2") format("woff2"),
+    url("baronneue-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #2d66ee;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  width: 2rem;
+  height: 0.25rem;
+  margin: 0.25rem auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_item {
+  margin: 1rem;
+}
+
+.nav_link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  border-left: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  padding: 0 0.5rem;
+}
+
+.nav_link:hover {
+  color: #2d66ee;
+  background: #fff;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+  font-family: "baron_neueblack";
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2d66ee;
+  font-family: "baron_neuebold";
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+}
+
+#section_one {
+  margin-top: 4rem;
+}
+
+#hero {
+  display: grid;
+}
+
+#hero_heading #hero_img {
+  grid-area: 1/1;
+}
+
+@media (max-width: 800px) {
+  .nav_menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #2d66ee;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav_menu.open {
+    left: 0;
+  }
+
+  .nav_item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.open .bar:nth-child(2) {
+    transform: translateX(50px);
+  }
+
+  .hamburger.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
