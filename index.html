@@ -16,62 +16,103 @@
     <header class="header">
       <nav class="nav_bar">
         <a href="index.html" class="logo">PORTFOLIO</a>
-
-        <ul class="nav_menu">
-          <li class="nav_item">
-            <a href="#" class="nav_link">FORSIDE</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">WEB</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">UX</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">ANIMATION</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">CONTENT</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">OM</a>
-          </li>
-        </ul>
-
         <div class="hamburger">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
+
+        <ul class="nav_menu">
+          <li class="nav_item">
+            <a href="index.html" class="nav_link">FORSIDE</a>
+          </li>
+          <li class="nav_item">
+            <a href="web.html" class="nav_link">WEB</a>
+          </li>
+          <li class="nav_item">
+            <a href="ux.html" class="nav_link">UX</a>
+          </li>
+          <li class="nav_item">
+            <a href="animation.html" class="nav_link">ANIMATION</a>
+          </li>
+          <li class="nav_item">
+            <a href="content.html" class="nav_link">CONTENT</a>
+          </li>
+          <li class="nav_item">
+            <a href="mig.html" class="nav_link">OM</a>
+          </li>
+        </ul>
       </nav>
-      <section id="hero">
-        <div id="hero_heading">
-          <h1>DETTE ER MIN PORTFOLIO</h1>
-          <h3>Kasper Nikolajsen Dahl</h3>
-        </div>
-        <div id="hero_img">
-          <img src="billeder/kasper.jpg" alt="Mand spejder ud over horisont" />
-        </div>
-      </section>
     </header>
 
+    <section id="hero">
+      <div id="hero_img">
+        <div id="head1">
+          <h1 class="white">DETTE ER MIN PORTFOLIO</h1>
+          <h3 class="white">Kasper Nikolajsen Dahl</h3>
+        </div>
+      </div>
+    </section>
+
+    <div id="arrow">
+      <a href="#heading"><img src="billeder/arrow.svg" alt="" /></a>
+    </div>
+
     <main>
-      <section id="section_one">
-        <article class="section_wrapper">
-          <div id="om">
-            <h1>om mig</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sit
-              voluptate veritatis neque voluptas suscipit quis, fuga magni
-              consequatur ab vitae dolorum delectus possimus, nobis accusamus
-              harum libero sint aperiam.
-            </p>
-          </div>
+      <section id="heading">
+        <h1>Projekter</h1>
+      </section>
+
+      <section id="grid">
+        <article id="web">
+          <a href="web.html"
+            ><img class="index_img" src="billeder/tema_2.jpg" alt="SPACE DUCKS"
+          /></a>
+        </article>
+        <article id="ux">
+          <a href="ux.html"
+            ><img
+              class="index_img"
+              src="billeder/tema_3.JPG"
+              alt="Billede af webshop"
+          /></a>
+        </article>
+        <article id="animation">
+          <a href="animation.html"
+            ><img
+              class="index_img"
+              src="billeder/tema_4.JPG"
+              alt="Billede af spil"
+          /></a>
+        </article>
+        <article id="content">
+          <a href="content.html"
+            ><img
+              class="index_img"
+              src="billeder/tema_5.JPG"
+              alt="Billede af website"
+          /></a>
+        </article>
+        <article id="om_mig">
+          <a href="mig.html"
+            ><img class="index_img" src="billeder/kasper.jpg" alt="Sej mand"
+          /></a>
+        </article>
+        <article id="duck">
+          <a href="ekstra.html"
+            ><img
+              class="index_img"
+              src="billeder/swim.jpg"
+              alt="ænder i rummet"
+          /></a>
         </article>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <address>Kasper Nikolajsen Dahl</address>
+      <address>MMD 1. semester</address>
+    </footer>
 
     <script src="script.js"></script>
   </body>
