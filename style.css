@@ -163,7 +163,7 @@ h1 {
   font-size: 4rem;
   font-weight: 500;
   color: #2d66ee;
-  font-family: "baron_neuebold";
+  font-family: "baron_neueblack";
   text-align: center;
   margin-bottom: 4rem;
 }
@@ -173,6 +173,7 @@ h2 {
   color: #2d66ee;
   font-size: 2rem;
   margin: 2rem;
+  padding-top: 5rem;
   text-align: center;
 }
 
@@ -186,6 +187,17 @@ h3 {
 .white {
   color: white;
   margin: 2rem;
+}
+
+.hero_txt {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  background-color: #2d67ee98;
+  padding: 0.8rem;
+  letter-spacing: 0.1rem;
+  max-width: 500px;
+  margin: auto;
 }
 
 #grid {
@@ -205,15 +217,73 @@ h3 {
   grid-area: 1/1;
 }
 
+#hero {
+  background-color: #2d67ee9d;
+  background-size: cover;
+  height: 55rem;
+}
+
 #hero_img {
   margin-bottom: 1rem;
   background-image: url(billeder/splash.jpg);
   background-size: cover;
   width: 100%;
-  height: 47rem;
+  height: 55rem;
   background-position: 52% 10%;
   display: grid;
   place-content: center;
+}
+
+#hero_img_web {
+  margin-bottom: 1rem;
+  background-image: url(billeder/img_6.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 55rem;
+  background-position: 36% 67%;
+  display: grid;
+  place-content: center;
+
+  mix-blend-mode: difference;
+}
+
+#hero_img_ux {
+  margin-bottom: 1rem;
+  background-image: url(billeder/Frede_diagonal.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 55rem;
+  background-position: 45% 14%;
+  display: grid;
+  place-content: center;
+
+  mix-blend-mode: difference;
+}
+
+#hero_img_ani {
+  margin-bottom: 1rem;
+  background-image: url(billeder/gameover.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 55rem;
+  background-position: 71% 25%;
+  display: grid;
+  place-content: center;
+
+  mix-blend-mode: difference;
+}
+
+#hero_img_con {
+  margin-bottom: 1rem;
+  background-image: url(billeder/blumen.webp);
+  background-size: cover;
+  width: 100%;
+  height: 55rem;
+  background-position: 71% 25%;
+  display: grid;
+  place-content: center;
+
+  mix-blend-mode: difference;
 }
 
 #indhold {
@@ -234,31 +304,24 @@ h3 {
   transform: rotate(45deg);
   transition: ease-out 100ms;
 }
-
 .arrow:hover {
   border-bottom-width: 16px;
   border-right-width: 16px;
 }
-
 .container {
-  display: flex;
-  align-items: center;
+  display: grid;
   justify-content: center;
   margin-bottom: 5rem;
 }
-
 #duck {
   display: none;
 }
-
 .kategori {
   display: grid;
 }
-
 .kategori .a_img {
   grid-area: 1/1;
 }
-
 .kategori .a_head {
   grid-area: 1/1;
   margin: auto;
@@ -268,6 +331,7 @@ h3 {
   text-align: center;
   height: 3rem;
   width: 12rem;
+
   z-index: 1;
   transition: ease-out 250ms;
   font-size: 2rem;
@@ -276,47 +340,39 @@ h3 {
 .kategori .a_head:hover {
   color: #2d66ee;
   background-color: #feb700;
-  box-shadow: 0 0 3rem #feb700;
+  box-shadow: 0 0 2rem #feb700;
 }
-
 .index_img {
   margin-top: 3rem;
 }
-
 @media (max-width: 800px) {
   .nav_menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 3rem;
     flex-direction: column;
     background-color: #2d66ee;
     width: 100%;
     text-align: center;
     transition: 0.3s;
   }
-
   .nav_menu.open {
     left: 0;
   }
-
   .nav_item {
     margin: 2.5rem 0;
   }
-
   .hamburger {
     display: block;
     cursor: pointer;
     transition: ease-out 250ms;
   }
-
   .hamburger:hover {
     margin: 0.25rem;
   }
-
   .hamburger.open .bar:nth-child(2) {
     transform: translateX(70px);
   }
-
   .hamburger.open .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -325,13 +381,11 @@ h3 {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
 @media (min-width: 1000px) {
   #grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.2rem;
-
     margin-bottom: 5rem;
   }
 
@@ -347,37 +401,30 @@ h3 {
     display: grid;
     grid-area: span 1 / span 2;
   }
-
   h2 {
     font-size: 4rem;
   }
-
   .index_img {
     height: 100%;
     object-fit: cover;
   }
-
   h2 {
     margin: 0;
     padding: 0.125rem;
   }
-
   h1.white {
     font-size: 6rem;
     transform: scale(1, 1.4);
   }
-
   .index_img {
     filter: saturate(0.3);
     transition: ease-out 0.25s;
   }
-
   .index_img:hover {
     filter: saturate(1);
     box-shadow: 0 2rem 3rem grey;
   }
-
   #hero_img {
-    height: 53rem;
+    height: 60rem;
   }
 }
