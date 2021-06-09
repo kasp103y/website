@@ -74,13 +74,28 @@ a {
   position: fixed;
   width: 100%;
   z-index: 100;
+  border-bottom: 0.3rem solid #feb700;
+}
+
+footer {
+  background-color: #2d66ee;
+  padding: 2rem;
+  border-top: 0.3rem solid #feb700;
+}
+
+address {
+  font-style: normal;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .nav_bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .hamburger {
@@ -114,6 +129,7 @@ a {
   border-left: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   padding: 0 0.5rem;
+  transition: ease-out 250ms;
 }
 
 .nav_link:hover {
@@ -121,6 +137,7 @@ a {
   background-color: #feb700;
   border-left: 0.125rem solid #feb700;
   border-right: 0.125rem solid #feb700;
+  box-shadow: 0 0 3rem #feb700;
 }
 
 .logo {
@@ -128,10 +145,12 @@ a {
   font-weight: 500;
   color: white;
   font-family: "baron_neueblack";
+  transition: ease-out 250ms;
 }
 
 .logo:hover {
   color: #feb700;
+  text-shadow: 0 0 3rem #feb700;
 }
 
 main {
@@ -146,36 +165,35 @@ h1 {
   color: #2d66ee;
   font-family: "baron_neuebold";
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 h2 {
   font-family: "baron_neuebold";
   color: #2d66ee;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
 }
 
 h3 {
   font-family: "Oswald", sans-serif;
-  color: #2d66ee;
-  font-size: 3rem;
+  color: #fff;
+  font-size: 2rem;
   text-align: center;
 }
 
 .white {
   color: white;
+  margin: 2rem;
 }
 
-#section_web {
-  margin-top: 4rem;
+#grid {
+  margin-bottom: 4rem;
 }
 
 #hero {
   display: grid;
-}
-
-#hero_heading {
-  grid-area: 1/1;
 }
 
 #head1 {
@@ -188,11 +206,11 @@ h3 {
 }
 
 #hero_img {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   background-image: url(billeder/splash.jpg);
   background-size: cover;
   width: 100%;
-  height: 55rem;
+  height: 47rem;
   background-position: 52% 10%;
   display: grid;
   place-content: center;
@@ -206,41 +224,63 @@ h3 {
   margin-bottom: 2rem;
 }
 
-#arrow {
-  position: relative;
-  width: 2rem;
-  height: auto;
-  margin: auto;
-  margin-bottom: 3rem;
-  transition: smooth 3ms;
-  animation-name: pil_kf;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+.arrow {
+  box-sizing: border-box;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-style: solid;
+  border-color: #2d66ee;
+  border-width: 0px 8px 8px 0px;
+  transform: rotate(45deg);
+  transition: ease-out 100ms;
 }
 
-@keyframes pil_kf {
-  to {
-    transform: translateY(3px);
-  }
+.arrow:hover {
+  border-bottom-width: 16px;
+  border-right-width: 16px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
 }
 
 #duck {
   display: none;
 }
 
-footer {
-  background-color: #2d66ee;
-  padding: 3rem;
+.kategori {
+  display: grid;
 }
 
-address {
-  font-style: normal;
+.kategori .a_img {
+  grid-area: 1/1;
+}
+
+.kategori .a_head {
+  grid-area: 1/1;
+  margin: auto;
+  background-color: #2d66ee;
   font-family: "Oswald", sans-serif;
-  color: white;
-  display: flex;
-  justify-content: center;
+  color: #fff;
+  text-align: center;
+  height: 3rem;
+  width: 12rem;
+  z-index: 1;
+  transition: ease-out 250ms;
+  font-size: 2rem;
+}
+
+.kategori .a_head:hover {
+  color: #2d66ee;
+  background-color: #feb700;
+  box-shadow: 0 0 3rem #feb700;
+}
+
+.index_img {
+  margin-top: 3rem;
 }
 
 @media (max-width: 800px) {
@@ -266,10 +306,15 @@ address {
   .hamburger {
     display: block;
     cursor: pointer;
+    transition: ease-out 250ms;
+  }
+
+  .hamburger:hover {
+    margin: 0.25rem;
   }
 
   .hamburger.open .bar:nth-child(2) {
-    transform: translateX(50px);
+    transform: translateX(70px);
   }
 
   .hamburger.open .bar:nth-child(1) {
@@ -281,12 +326,13 @@ address {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   #grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.2rem;
-    object-fit: cover;
+
+    margin-bottom: 5rem;
   }
 
   #om_mig {
@@ -298,12 +344,17 @@ address {
   }
 
   #duck {
-    display: block;
+    display: grid;
     grid-area: span 1 / span 2;
+  }
+
+  h2 {
+    font-size: 4rem;
   }
 
   .index_img {
     height: 100%;
+    object-fit: cover;
   }
 
   h2 {
@@ -312,15 +363,21 @@ address {
   }
 
   h1.white {
-    font-size: 8rem;
-    transform: scale(1, 1.5);
+    font-size: 6rem;
+    transform: scale(1, 1.4);
   }
 
   .index_img {
-    filter: saturate(0.5);
+    filter: saturate(0.3);
+    transition: ease-out 0.25s;
   }
 
   .index_img:hover {
-    filter: saturate(1.5);
+    filter: saturate(1);
+    box-shadow: 0 2rem 3rem grey;
+  }
+
+  #hero_img {
+    height: 53rem;
   }
 }
