@@ -140,6 +140,39 @@ address {
   box-shadow: 0 0 3rem #feb700;
 }
 
+.page_btn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 15rem;
+  text-align: center;
+  display: block;
+  background-color: #2d66ee;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  border-left: 0.125rem solid #2d66ee;
+  border-right: 0.125rem solid #2d66ee;
+  padding: 0.2rem 0.5rem;
+  transition: ease-out 250ms;
+}
+
+.page_btn:hover {
+  color: #2d66ee;
+  background-color: #feb700;
+  border-left: 0.125rem solid #feb700;
+  border-right: 0.125rem solid #feb700;
+  box-shadow: 0 0 3rem #feb700;
+}
+
+#button ul {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.wrapper {
+  margin-bottom: 5rem;
+}
+
 .logo {
   font-size: 2.5rem;
   font-weight: 500;
@@ -157,6 +190,10 @@ main {
   max-width: 1000px;
   margin: auto;
   padding: 0 5rem;
+}
+
+#desktop_only {
+  display: none;
 }
 
 h1 {
@@ -182,6 +219,11 @@ h3 {
   color: #fff;
   font-size: 2rem;
   text-align: center;
+}
+
+p {
+  color: #222a3f;
+  font-family: "Oswald", sans-serif;
 }
 
 .white {
@@ -302,7 +344,7 @@ h3 {
   border-color: #2d66ee;
   border-width: 0px 8px 8px 0px;
   transform: rotate(45deg);
-  transition: ease-out 100ms;
+  transition: ease-out 250ms;
 }
 .arrow:hover {
   border-bottom-width: 16px;
@@ -345,6 +387,7 @@ h3 {
 .index_img {
   margin-top: 3rem;
 }
+
 @media (max-width: 800px) {
   .nav_menu {
     position: fixed;
@@ -402,16 +445,15 @@ h3 {
     grid-area: span 1 / span 2;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0.125rem;
   }
   .index_img {
     height: 100%;
     object-fit: cover;
   }
-  h2 {
-    margin: 0;
-    padding: 0.125rem;
-  }
+
   h1.white {
     font-size: 6rem;
     transform: scale(1, 1.4);
@@ -424,7 +466,28 @@ h3 {
     filter: saturate(1);
     box-shadow: 0 2rem 3rem grey;
   }
+
   #hero_img {
     height: 60rem;
+  }
+
+  .grid_wrapper {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 1.2rem;
+  }
+
+  .col_2 {
+    grid-area: span 1 / span 2;
+  }
+
+  .col_1 {
+    grid-area: span 2 / span 1;
+  }
+
+  #desktop_only {
+    display: block;
   }
 }
