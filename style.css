@@ -141,9 +141,9 @@ address {
 }
 
 .page_btn {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 400;
-  width: 15rem;
+  width: 10rem;
   text-align: center;
   display: block;
   background-color: #2d66ee;
@@ -153,6 +153,7 @@ address {
   border-right: 0.125rem solid #2d66ee;
   padding: 0.2rem 0.5rem;
   transition: ease-out 250ms;
+  margin: 0 1rem;
 }
 
 .page_btn:hover {
@@ -216,7 +217,7 @@ h2 {
 
 h3 {
   font-family: "Oswald", sans-serif;
-  color: #fff;
+  color: #2d66ee;
   font-size: 2rem;
   text-align: center;
 }
@@ -267,13 +268,14 @@ p {
 
 #hero_img {
   margin-bottom: 1rem;
-  background-image: url(billeder/splash.jpg);
+  background-image: url(billeder/kasper_sten.jpg);
   background-size: cover;
   width: 100%;
   height: 55rem;
-  background-position: 52% 10%;
+  background-position: 72% -14%;
   display: grid;
   place-content: center;
+  filter: saturate(1.2);
 }
 
 #hero_img_web {
@@ -445,7 +447,7 @@ p {
     grid-area: span 1 / span 2;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     margin: 0;
     padding: 0.125rem;
   }
@@ -479,15 +481,28 @@ p {
     gap: 1.2rem;
   }
 
-  .col_2 {
+  #section_1 .col_2 {
     grid-area: span 1 / span 2;
   }
 
-  .col_1 {
+  #section_1 .col_1 {
     grid-area: span 2 / span 1;
+  }
+
+  #section_2 .col_2 {
+    grid-area: 1/1 / span 1 / span 2;
+  }
+
+  #section_2 .col_1 {
+    grid-area: 1/3;
   }
 
   #desktop_only {
     display: block;
+  }
+
+  .page_btn {
+    font-size: 1.5rem;
+    width: 15rem;
   }
 }
