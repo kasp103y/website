@@ -291,9 +291,21 @@ p {
   filter: saturate(1.2);
 }
 
-#hero_img_sten {
+#hero_img_gal {
   margin-bottom: 1rem;
   background-image: url(billeder/kasper_sten_and.webp);
+  background-size: cover;
+  width: 100%;
+  height: 55rem;
+  background-position: 72% -38%;
+  display: grid;
+  place-content: center;
+  mix-blend-mode: difference;
+}
+
+#hero_img_om {
+  margin-bottom: 1rem;
+  background-image: url(billeder/sten.webp);
   background-size: cover;
   width: 100%;
   height: 55rem;
