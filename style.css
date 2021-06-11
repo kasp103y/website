@@ -365,14 +365,14 @@ p {
   height: 2.5rem;
   width: 2.5rem;
   border-style: solid;
-  border-color: #2d66ee;
+  border-color: #feb700;
   border-width: 0px 8px 8px 0px;
   transform: rotate(45deg);
   transition: ease-out 250ms;
 }
 .arrow:hover {
-  border-bottom-width: 16px;
-  border-right-width: 16px;
+  border-bottom-width: 18px;
+  border-right-width: 18px;
 }
 .container {
   display: grid;
@@ -413,7 +413,7 @@ p {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .nav_menu {
     position: fixed;
     left: -100%;
@@ -450,7 +450,7 @@ p {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   #grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
