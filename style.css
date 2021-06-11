@@ -169,11 +169,7 @@ address {
   background-color: #feb700;
   border-left: 0.125rem solid #feb700;
   border-right: 0.125rem solid #feb700;
-  box-shadow: 0 0 3rem #feb700;
-}
-
-.page_btn:active {
-  box-shadow: 0 0 2rem #feb700;
+  box-shadow: 0 0 6rem #feb700;
 }
 
 #button ul {
@@ -203,12 +199,7 @@ li {
 
 .logo:hover {
   color: #feb700;
-  text-shadow: 0 0 3rem #feb700;
-}
-
-.logo:active {
-  color: #feb700;
-  text-shadow: 0 0 2rem #feb700;
+  text-shadow: 0 0 6rem #feb700;
 }
 
 #desktop_only {
@@ -298,6 +289,18 @@ p {
   display: grid;
   place-content: center;
   filter: saturate(1.2);
+}
+
+#hero_img_sten {
+  margin-bottom: 1rem;
+  background-image: url(billeder/kasper_sten_and.webp);
+  background-size: cover;
+  width: 100%;
+  height: 55rem;
+  background-position: 72% -38%;
+  display: grid;
+  place-content: center;
+  mix-blend-mode: difference;
 }
 
 #hero_img_web {
@@ -406,7 +409,8 @@ p {
 .kategori .a_head:hover {
   color: #2d66ee;
   background-color: #feb700;
-  box-shadow: 0 0 2rem #feb700;
+  box-shadow: 0 0 6rem #feb700;
+  box-shadow: inset 0 0 6rem #feb700;
 }
 .index_img {
   margin-top: 2rem;
@@ -509,7 +513,7 @@ p {
     background-color: #feb700;
 
     filter: saturate(1);
-    box-shadow: 0 0 2rem #feb700;
+    box-shadow: 0 0 6rem #feb700;
   }
 
   .side_img:active,
