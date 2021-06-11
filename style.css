@@ -182,6 +182,13 @@ address {
   margin: auto;
 }
 
+li {
+  font-family: "Oswald", sans-serif;
+  color: #222a3f;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
 .wrapper {
   margin-bottom: 5rem;
 }
@@ -239,6 +246,7 @@ p {
   font-size: 1.5rem;
   line-height: 2.1rem;
   padding-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .white {
@@ -469,6 +477,7 @@ p {
   }
   .index_img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -481,18 +490,26 @@ p {
     filter: saturate(0.3);
     transition: ease-out 0.25s;
   }
+
+  .a_img {
+    transition: ease-out 0.5s;
+    padding: 0;
+  }
+
   .side_img:hover,
   .index_img:hover {
     filter: saturate(1);
     box-shadow: 0 2rem 3rem grey;
   }
 
-  .kategori:hover > .a_head .index_img {
+  /* > er en combinator og vælger alle børn af parent-element .kategori :not() bruges til at fravælge et bestemt element */
+
+  .kategori:hover > *:not(.a_img) {
     color: #2d66ee;
     background-color: #feb700;
-    box-shadow: 0 0 2rem #feb700;
+
     filter: saturate(1);
-    box-shadow: 0 2rem 3rem grey;
+    box-shadow: 0 0 2rem #feb700;
   }
 
   .side_img:active,
