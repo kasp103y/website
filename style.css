@@ -512,9 +512,17 @@ p {
     font-size: 6rem;
     transform: scale(1, 1.4);
   }
+
+  h3.white {
+    font-size: 4rem;
+  }
   .side_img,
   .index_img {
     filter: saturate(0.3);
+    transition: ease-out 0.25s;
+  }
+
+  video {
     transition: ease-out 0.25s;
   }
 
@@ -529,6 +537,10 @@ p {
     box-shadow: 0 2rem 3rem grey;
   }
 
+  video:hover {
+    box-shadow: 0 2rem 3rem grey;
+  }
+
   /* > er en combinator og vælger alle børn af parent-element .kategori :not() bruges til at fravælge et bestemt element */
 
   .kategori:hover > *:not(.a_img) {
@@ -537,12 +549,6 @@ p {
 
     filter: saturate(1);
     box-shadow: 0 0 6rem #feb700;
-  }
-
-  .side_img:active,
-  .index_img:active {
-    filter: saturate(1);
-    box-shadow: 0 1rem 3rem grey;
   }
 
   .grid_wrapper {
