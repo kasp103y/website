@@ -242,6 +242,7 @@ p {
 .white {
   color: white;
   margin: 2rem;
+  padding: 1rem;
 }
 
 .hero_txt {
@@ -249,7 +250,7 @@ p {
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   background-color: #2d67ee98;
-  padding: 0.8rem;
+  padding: 1rem;
   letter-spacing: 0.1rem;
   max-width: 500px;
   margin: auto;
