@@ -92,6 +92,7 @@ address {
 
 .hamburger {
   display: none;
+  margin: 0;
 }
 
 .bar {
