@@ -74,7 +74,7 @@ a {
 main {
   max-width: 1400px;
   margin: auto;
-  padding: 0 5rem;
+  padding: 0 1.5rem;
 }
 
 .header {
@@ -453,6 +453,10 @@ p {
   }
 }
 @media (min-width: 800px) {
+  main {
+    padding: 0 5rem;
+  }
+
   #grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
