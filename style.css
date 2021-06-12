@@ -173,7 +173,7 @@ address {
 
 #button ul {
   display: flex;
-  justify-content: space-around;
+
   margin: auto;
 }
 
@@ -206,7 +206,7 @@ li {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 500;
   color: #2d66ee;
   font-family: "baron_neueblack";
@@ -241,8 +241,9 @@ p {
 
 .white {
   color: white;
-  margin: 2rem;
+
   padding: 1rem;
+  margin: auto;
 }
 
 .hero_txt {
@@ -250,7 +251,7 @@ p {
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   background-color: #2d67ee98;
-  padding: 0.5;
+  padding: 0.8rem;
   letter-spacing: 0.1rem;
   max-width: 500px;
   margin: auto;
@@ -455,6 +456,12 @@ p {
 @media (min-width: 800px) {
   main {
     padding: 0 5rem;
+  }
+
+  #button ul {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
   }
 
   #hero {
