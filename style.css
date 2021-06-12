@@ -413,6 +413,7 @@ p {
     flex-direction: column;
     background-color: #2d66ee;
     width: 100%;
+    height: 100vh;
     text-align: center;
     transition: 0.3s;
   }
