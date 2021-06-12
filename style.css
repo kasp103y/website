@@ -416,6 +416,7 @@ p {
     height: 100vh;
     text-align: center;
     transition: 0.3s;
+    padding: 3rem;
   }
   .nav_menu.open {
     left: 0;
