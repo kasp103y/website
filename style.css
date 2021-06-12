@@ -161,7 +161,6 @@ address {
   border-right: 0.125rem solid #2d66ee;
   padding: 0.2rem 0.5rem;
   transition: ease-out 250ms;
-  margin: 0 1rem;
 }
 
 .page_btn:hover {
