@@ -51,6 +51,10 @@ a {
   text-decoration: none;
 }
 
+p.hero_txt {
+  display: none;
+}
+
 main {
   max-width: 1400px;
   margin: auto;
@@ -187,6 +191,7 @@ li {
 
 #lister {
   display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -501,6 +506,11 @@ p {
   h3.white {
     font-size: 4rem;
   }
+
+  p.hero_txt {
+    display: block;
+  }
+
   .side_img,
   .index_img {
     filter: saturate(0.3);
