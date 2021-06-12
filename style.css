@@ -301,7 +301,7 @@ p {
 }
 
 #hero_img_om {
-  background-image: url(billeder/sten.webp);
+  background-image: url(billeder/kasper_sten_and.webp);
   background-size: cover;
 
   background-position: 72% -38%;
@@ -649,5 +649,9 @@ p {
 
   #con2 {
     grid-area: span 1 / span 2;
+  }
+
+  #hero_img_om {
+    background-image: url(billeder/sten.webp);
   }
 }
