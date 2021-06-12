@@ -499,6 +499,12 @@ p {
     object-fit: cover;
   }
 
+  .galleri_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
   h1.white {
     font-size: 6rem;
     transform: scale(1, 1.4);
@@ -514,7 +520,7 @@ p {
 
   .side_img,
   .index_img {
-    filter: saturate(0.3);
+    filter: saturate(0.6);
     transition: ease-out 0.25s;
   }
 
