@@ -276,7 +276,7 @@ p {
 #hero {
   background-color: #2d67ee9d;
   background-size: cover;
-  height: 55rem;
+  height: 40rem;
 }
 
 #hero_img {
@@ -455,6 +455,10 @@ p {
 @media (min-width: 800px) {
   main {
     padding: 0 5rem;
+  }
+
+  #hero {
+    height: 55rem;
   }
 
   #grid {
