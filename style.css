@@ -4,6 +4,7 @@
     url("fonte/baronneue-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
     url("fonte/baronneue-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
     url("baronneue-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  display: swap;
 }
 
 * {
