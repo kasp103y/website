@@ -280,23 +280,19 @@ p {
 }
 
 #hero_img {
-  margin-bottom: 1rem;
-  background-image: url(billeder/kasper_sten.webp);
+  background-image: url(billeder/kasper_hero.webp);
   background-size: cover;
-  width: 100%;
-  height: 55rem;
-  background-position: 72% -14%;
+
+  background-position: 72% -38%;
   display: grid;
   place-content: center;
-  filter: saturate(1.2);
+  mix-blend-mode: difference;
 }
 
 #hero_img_gal {
-  margin-bottom: 1rem;
   background-image: url(billeder/kasper_sten_and.webp);
   background-size: cover;
-  width: 100%;
-  height: 55rem;
+
   background-position: 72% -38%;
   display: grid;
   place-content: center;
@@ -304,11 +300,9 @@ p {
 }
 
 #hero_img_om {
-  margin-bottom: 1rem;
   background-image: url(billeder/sten.webp);
   background-size: cover;
-  width: 100%;
-  height: 55rem;
+
   background-position: 72% -38%;
   display: grid;
   place-content: center;
@@ -316,11 +310,9 @@ p {
 }
 
 #hero_img_web {
-  margin-bottom: 1rem;
   background-image: url(billeder/img_6.webp);
   background-size: cover;
-  width: 100%;
-  height: 55rem;
+
   background-position: 36% 67%;
   display: grid;
   place-content: center;
@@ -329,11 +321,9 @@ p {
 }
 
 #hero_img_ux {
-  margin-bottom: 1rem;
   background-image: url(billeder/Frede_diagonal.webp);
   background-size: cover;
-  width: 100%;
-  height: 55rem;
+
   background-position: 45% 14%;
   display: grid;
   place-content: center;
@@ -342,11 +332,9 @@ p {
 }
 
 #hero_img_ani {
-  margin-bottom: 1rem;
   background-image: url(billeder/gameover.webp);
   background-size: cover;
-  width: 100%;
-  height: 55rem;
+
   background-position: 71% 25%;
   display: grid;
   place-content: center;
@@ -355,11 +343,9 @@ p {
 }
 
 #hero_img_con {
-  margin-bottom: 1rem;
   background-image: url(billeder/blumen.webp);
   background-size: cover;
-  width: 100%;
-  height: 55rem;
+
   background-position: 71% 25%;
   display: grid;
   place-content: center;
@@ -532,10 +518,6 @@ p {
   .index_img:active {
     filter: saturate(1);
     box-shadow: 0 1rem 3rem grey;
-  }
-
-  #hero_img {
-    height: 60rem;
   }
 
   .grid_wrapper {
