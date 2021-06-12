@@ -205,6 +205,10 @@ li {
   display: none;
 }
 
+#lister {
+  display: flex;
+}
+
 h1 {
   font-size: 3.5rem;
   font-weight: 500;
@@ -228,6 +232,12 @@ h3 {
   color: #2d66ee;
   font-size: 2rem;
   text-align: center;
+}
+
+h4 {
+  font-family: "Oswald", sans-serif;
+  color: #2d66ee;
+  font-size: 1.6rem;
 }
 
 p {
