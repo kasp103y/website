@@ -51,10 +51,6 @@ a {
   text-decoration: none;
 }
 
-p.hero_txt {
-  display: none;
-}
-
 main {
   max-width: 1400px;
   margin: auto;
@@ -185,10 +181,6 @@ li {
 .logo:hover {
   color: #feb700;
   text-shadow: 0 0 6rem #feb700;
-}
-
-#desktop_only {
-  display: none;
 }
 
 #lister {
@@ -413,6 +405,10 @@ p {
 }
 
 @media (max-width: 1000px) {
+  #desktop_only {
+    display: none;
+  }
+
   .nav_menu {
     position: fixed;
     left: -100%;
@@ -451,7 +447,8 @@ p {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-@media (min-width: 800px) {
+
+@media (min-width: 1200px) {
   main {
     padding: 0 5rem;
   }
@@ -513,10 +510,6 @@ p {
 
   h3.white {
     font-size: 4rem;
-  }
-
-  p.hero_txt {
-    display: block;
   }
 
   .side_img,
