@@ -137,6 +137,7 @@ address {
   font-size: 1rem;
   font-weight: 400;
   width: 8rem;
+  margin: 0.5rem;
   text-align: center;
   display: block;
   background-color: #2d66ee;
@@ -158,8 +159,8 @@ address {
 
 #button ul {
   display: flex;
-
-  margin: auto;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 li {
@@ -376,6 +377,7 @@ p {
   display: grid;
   justify-content: center;
 }
+
 #duck {
   display: none;
 }
@@ -404,7 +406,6 @@ p {
   color: #2d66ee;
   background-color: #feb700;
   box-shadow: 0 0 6rem #feb700;
-  box-shadow: inset 0 0 6rem #feb700;
 }
 .index_img {
   margin-top: 2rem;
