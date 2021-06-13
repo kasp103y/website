@@ -670,7 +670,30 @@ p {
     grid-area: span 1 / span 2;
   }
 
+  #grid_4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.2rem;
+    margin-bottom: 5rem;
+  }
+
   #hero_img_om {
     background-image: url(billeder/sten.webp);
+  }
+
+  #pass1 {
+    grid-area: span 2;
+  }
+
+  #pass2 {
+    grid-area: 1/1 / span 2 / span 3;
+  }
+
+  #pass3 {
+    grid-area: span 3 / span 2;
+  }
+
+  #pass4 {
+    grid-area: span 3 / span 2;
   }
 }
