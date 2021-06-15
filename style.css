@@ -233,10 +233,14 @@ p {
 }
 
 .white {
-  color: white;
+  color: #fff;
 
   padding: 1rem;
   margin: auto;
+}
+
+h2.white {
+  font-family: "Oswald", sans-serif;
 }
 
 #grid {
@@ -249,11 +253,16 @@ p {
 
 #head1 {
   margin: auto;
+  mix-blend-mode: screen;
 }
 
 #head1,
+#hero,
 #img_hero {
   grid-area: 1/1;
+}
+#hero_wrapper {
+  display: grid;
 }
 
 #hero {
@@ -412,7 +421,7 @@ p {
     height: 100vh;
     text-align: center;
     transition: 0.3s;
-    padding: 4rem 3rem 12rem 3rem;
+    padding: 0 3rem 12rem 3rem;
   }
   .nav_menu.open {
     left: 0;
@@ -503,7 +512,6 @@ p {
 
   h2.white {
     font-size: 4rem;
-    font-family: "Oswald", sans-serif;
   }
 
   .side_img,
