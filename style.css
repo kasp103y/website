@@ -406,6 +406,10 @@ h2.white {
   margin-bottom: 2rem;
 }
 
+#count_doku {
+  margin-top: 10rem;
+}
+
 @media (max-width: 1000px) {
   #desktop_only {
     display: none;

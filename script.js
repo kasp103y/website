@@ -12,8 +12,3 @@ function mobil() {
   burger.classList.toggle("open");
   navMenu.classList.toggle("open");
 }
-
-function closeMenu() {
-  burger.classList.remove("open");
-  navMenu.classList.remove("open");
-}
