@@ -204,7 +204,7 @@ h1 {
 h2 {
   font-family: "baron_neuebold";
   color: #2d66ee;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 2rem;
   padding-top: 2rem;
   text-align: center;
@@ -236,17 +236,6 @@ p {
   color: white;
 
   padding: 1rem;
-  margin: auto;
-}
-
-.hero_txt {
-  color: white;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.2rem;
-  background-color: #2d67ee98;
-  padding: 0.8rem;
-  letter-spacing: 0.1rem;
-  max-width: 500px;
   margin: auto;
 }
 
@@ -512,8 +501,9 @@ p {
     transform: scale(1, 1.4);
   }
 
-  h3.white {
+  h2.white {
     font-size: 4rem;
+    font-family: "Oswald", sans-serif;
   }
 
   .side_img,
