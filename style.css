@@ -139,8 +139,7 @@ address {
   background-color: #2d66ee;
   color: #fff;
   font-family: "Oswald", sans-serif;
-  border-left: 0.125rem solid #2d66ee;
-  border-right: 0.125rem solid #2d66ee;
+
   padding: 0.2rem 0.5rem;
   transition: ease-out 250ms;
 }
@@ -148,8 +147,6 @@ address {
 .page_btn:hover {
   color: #2d66ee;
   background-color: #feb700;
-  border-left: 0.125rem solid #feb700;
-  border-right: 0.125rem solid #feb700;
   box-shadow: 0 0 6rem #feb700;
 }
 
