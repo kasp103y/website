@@ -52,7 +52,7 @@ a {
 }
 
 main {
-  max-width: 1400px;
+  max-width: 180ch;
   margin: auto;
   padding: 0 1.5rem;
 }
@@ -153,10 +153,14 @@ address {
   box-shadow: 0 0 6rem #feb700;
 }
 
-#button ul {
+.button ul {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+}
+
+.button .wrapper_content_mid {
+  margin-bottom: 10rem;
 }
 
 li {
@@ -223,7 +227,7 @@ p {
   color: #222a3f;
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
-  line-height: 2.1rem;
+  line-height: 2.4rem;
   padding-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -457,7 +461,7 @@ p {
     margin-bottom: 3rem;
   }
 
-  #button ul {
+  .button ul {
     display: flex;
     justify-content: space-around;
     margin: auto;
@@ -559,6 +563,10 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
+  }
+
+  .para_ekstra {
+    margin: 0 10rem 5rem 10rem;
   }
 
   #section_1 .grid_wrapper .col_2,
